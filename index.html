@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TimeLocked Wallet</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>TimeLocked Wallet</h2>
+    <input type="number" id="amount" placeholder="Amount to lock (in ETH)" />
+    <input type="text" id="lockTime" placeholder="Enter lock duration (in seconds)" />
+    <br />
+    <button onclick="lockFunds()">Lock Funds</button>
+    <button onclick="withdrawFunds()">Withdraw Funds</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
